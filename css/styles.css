@@ -655,20 +655,24 @@ fieldset {
     display: flex;
     flex-direction: column;
     border: none;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .modal-label {
-    position: relative;
-    display: flex;
+    
+    display: block;
     flex-direction: column;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.16;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--subtle-text);
     margin-bottom: 4px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-label-div {
+    position: relative;
 }
 
 .modal-icon:focus-within {
@@ -679,25 +683,28 @@ fieldset {
     position: absolute;
     top: 50%;
     left: 16px;
-    transform: translateY(-40%);
+    transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-label:focus-within  {
+.modal-label:focus  {
     fill: var(--primary-brand); 
 }
 
-.modal-input:focus-within {
+.modal-input:focus {
     border-color: var(--primary-brand);
 }
 
 .modal-input {
     border: 1px solid var(--modal-navy);
     border-radius: 4px;
-    /* width: 360px; */
+    width: 100%;
     height: 40px;
     padding-left: 38px;
     margin-bottom: 8px;
+    background-color: transparent;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-textarea {
