@@ -486,6 +486,11 @@ fieldset {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: var(--success);
+}
+
 .footer-social-svg {
     fill: var(--light);
 }
@@ -507,9 +512,6 @@ fieldset {
     max-width: 264px;
 }
 
-.footer-subscribe {
-    
-}
 
 .footer-form {
     display: flex;
@@ -527,6 +529,7 @@ fieldset {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--white-background);
+    margin-bottom: 16px;
 }
 
 .footer-form-input {
@@ -536,7 +539,12 @@ fieldset {
     min-width: 264px;
     min-height: 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-
+    padding: 8px 16px 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: var(--white-background);
 }
 
 .footer-form-input::placeholder {
@@ -544,8 +552,7 @@ fieldset {
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
-    color: var(--white-background);
-    padding: 8px 16px 8px;
+    color: var(--white-background); 
 }
 
 .footer-button-subscribe {
