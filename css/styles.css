@@ -675,10 +675,6 @@ fieldset {
     position: relative;
 }
 
-/* .modal-icon:focus-within {
-    fill: var(--primary-brand); */
-}
-
 .modal-icon {
     position: absolute;
     top: 50%;
