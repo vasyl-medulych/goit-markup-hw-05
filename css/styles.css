@@ -601,8 +601,9 @@ fieldset {
 
 .modal {
     position: absolute;
-    /* top: 50%; */
+    top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
     background-color: var(--modal-background);
     border-radius: 4px;
     padding: 72px 24px 24px 24px;
@@ -627,7 +628,7 @@ fieldset {
     border: 1px solid rgba(0, 0, 0, 0.1);
     /* margin-bottom: 24px; */
     background-color: var(--accent);
-    /* padding: 0; */
+    padding: 0;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -658,6 +659,10 @@ fieldset {
     margin-bottom: 8px;
 }
 
+.input-textarea {
+    margin-bottom: 16px;
+}
+
 .modal-label {
     display: block;
     flex-direction: column;
@@ -686,7 +691,7 @@ fieldset {
     border-color: var(--primary-brand);
 }
 
-.modal-icon:focus-within {
+.modal-label-div:focus-within .modal-icon {
     fill: var(--primary-brand);
 }
 
@@ -758,7 +763,7 @@ fieldset {
 
 }
 
-.input-check:checked .checkbox-span {
+.agree-check:has(.visually-hidden:checked) .checkbox-span {
     background-color: var(--pressed-state);
     border: none;
     fill: var(--light);
