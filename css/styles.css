@@ -617,7 +617,8 @@ fieldset {
     position: absolute;
     top: 24px;
     right: 24px;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
     width: 24px;
     height: 24px;
