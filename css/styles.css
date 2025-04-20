@@ -578,6 +578,8 @@ fieldset {
     fill: var(--white-background);
 }
 
+/* Modal Form */
+
 .modal-overlay {
     background-color: var(--modal-navy);
     position: fixed;
@@ -586,9 +588,6 @@ fieldset {
     width: 100%;
     height: 100%;
     z-index: 999;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
     opacity: 0;
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -618,7 +617,6 @@ fieldset {
     position: absolute;
     top: 24px;
     right: 24px;
-    /* margin-left: auto; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -626,7 +624,6 @@ fieldset {
     height: 24px;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    /* margin-bottom: 24px; */
     background-color: var(--accent);
     padding: 0;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -701,7 +698,6 @@ fieldset {
     width: 100%;
     height: 40px;
     padding-left: 38px;
-    /* margin-bottom: 8px; */
     background-color: transparent;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -757,10 +753,6 @@ fieldset {
     align-items: center;
     justify-content: center;
     fill: transparent;
-}
-
-.checkbox-svg {
-
 }
 
 .agree-check:has(.visually-hidden:checked) .checkbox-span {
